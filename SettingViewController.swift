@@ -26,14 +26,15 @@ class SettingViewController: UIViewController {
     }
            
         
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+         
+    @IBAction func tipSelection(sender: AnyObject) {
+        
+        let tipChange = tipSet.selectedSegmentIndex
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setObject(tipChange, forKey: "tipChange")
+        defaults.synchronize()
+        
     }
-    */
+
 
 }
