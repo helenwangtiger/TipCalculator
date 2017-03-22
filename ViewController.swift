@@ -33,9 +33,20 @@ class ViewController: UIViewController {
     }
 
     @IBAction func tipInputValue(sender: AnyObject) {
-        
         let tipRate = [0.18,0.20,0.25]
         let bill = Double(billInput.text!) ?? 0
+        let defaults = NSUserDefaults.standardUserDefaults()
+       
+        if let tipchange = defaults.stringForKey("tipChange") {
+            let tip = bill * tipRate[Int(tipchange)!]
+           
+            let total = bill + tip
+            tipText.text = String(format: "$%.2f", tip)
+            totalText.text = String(format: "$%.2f", total)
+        
+        }
+        
+        
         let tip = bill * tipRate[tipChoice.selectedSegmentIndex]
         let total = bill + tip
         tipText.text = String(format: "$%.2f", tip)
