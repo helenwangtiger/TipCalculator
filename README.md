@@ -1,4 +1,3 @@
-# TipCalculator
 # Pre-work - *TipCalculator*
 
 **TipCalculator** is a tip calculator application for iOS.
@@ -14,7 +13,7 @@ The following **required** functionality is complete:
 * [ x] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
 
 The following **optional** features are implemented:
-* [ x] Settings page to change the default tip percentage.
+* [x ] Settings page to change the default tip percentage.
 * [ ] UI animations
 * [ ] Remembering the bill amount across app restarts (if <10mins)
 * [ ] Using locale-specific currency and currency thousands separators.
@@ -28,7 +27,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img file:///Users/qianwang/Desktop/11.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/a/UMHGq' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
